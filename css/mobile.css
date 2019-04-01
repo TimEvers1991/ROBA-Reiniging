@@ -1,0 +1,88 @@
+/* Tablet */
+
+#product-info .product-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 0rem 2rem 2rem 2rem;
+}
+
+#home-contact .container-contact {
+  margin-top: 0;
+}
+
+#over-roba-contact .container-contact {
+  width: 75%;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+}
+
+.card img {
+  /* width: 464px; */
+  /* height: 315px; */
+}
+/* Mobile */
+@media (max-width: 600px) {
+  .navcontainer {
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+  }
+
+  .logo {
+    width: 240px;
+    height: 64px;
+  }
+
+  .navbuttons {
+    padding: 1.7rem;
+    padding-top: 1rem;
+  }
+
+  /* Home-page (categoriën en producten */
+  #product-info .product-container {
+    margin: 0rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  #product-info h3 {
+    padding-top: 0;
+    padding-bottom: 0.5rem;
+  }
+  .card {
+    padding: 1rem 1rem 0 1rem;
+  }
+
+  .card img {
+    width: 308px;
+    height: 210px;
+    margin: 0.5rem;
+  }
+
+  .card ul a {
+    width: 155px;
+    padding: 0.35rem 0.2rem 0.35rem 0.2rem;
+    border-radius: 60px;
+    margin-top: 0;
+  }
+
+  /* Contact container */
+  #home-contact .container-contact {
+    width: 65%;
+    margin-top: 0;
+  }
+  #over-roba-contact .container-contact {
+    width: 75%;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  /* Footer */
+  #footer {
+    text-align: center;
+  }
+
+  #footer-product {
+    text-align: center;
+  }
+}

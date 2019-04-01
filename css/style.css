@@ -1,0 +1,286 @@
+/* Variables */
+:root {
+  --secondary-color: #4a708b;
+  --primary-color: #001320;
+}
+
+/* Main Style and utility classes */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #f1f9ff;
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+.py-2 {
+  padding: 1.5rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+
+.margin-top {
+  margin-top: 1.4rem;
+}
+
+/* Navbar */
+#navbar {
+  background: var(--primary-color);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  opacity: 0.9;
+}
+
+.navcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+}
+
+.logo {
+  display: inline-block;
+  width: 320px;
+  height: 85px;
+}
+
+.navbuttons {
+  display: flex;
+  padding: 1.7rem;
+}
+
+.navbuttons li {
+  list-style: none;
+}
+
+.navbuttons li a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 1rem;
+  border-bottom: 3px transparent solid;
+  padding-bottom: 0.5rem;
+  transition: border-color 0.5s;
+}
+.navbuttons li a:hover {
+  border-color: #ccc;
+}
+.navbuttons li a.current {
+  border-color: #ffbc00;
+}
+
+/* Home-page (categorieën en producten) */
+#product-info {
+}
+
+#product-info .product-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.5rem;
+  padding: 0 1rem 1rem 1rem;
+}
+
+/* Tijdelijk (geef image nog een class */
+.card {
+  background: #d8d8d8;
+  border-radius: 10px;
+}
+
+.card h3 {
+  padding-top: 1rem;
+}
+
+.card img {
+  display: inline-block;
+  width: 616px;
+  height: 420px;
+  margin: 1rem;
+  border-radius: 7px;
+}
+
+.product-button {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 1rem;
+}
+
+.product-button-2 {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 1rem;
+}
+
+.card ul {
+  list-style: none;
+}
+
+.card ul a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background: #001c2ecc;
+  width: 180px;
+  padding: 0.7rem 0.4rem 0.7rem 0.4rem;
+  border-radius: 60px;
+}
+
+.card ul a:hover {
+  background: #00395ccc;
+}
+
+/* Homepage contact */
+#home-contact .flex-container-contact {
+  display: flex;
+  justify-content: center;
+}
+
+#home-contact .container-contact {
+  font-size: 1.3rem;
+  text-align: center;
+  background: #d8d8d8;
+  border-radius: 10px;
+  padding: 2.5rem;
+  margin: 1.1rem 2rem 2rem 2rem;
+  width: 50%;
+}
+
+#home-contact .container-contact h1 {
+  padding-bottom: 0.9rem;
+  padding-top: 0;
+}
+
+#home-contact .container-contact p {
+  padding-bottom: 0.4rem;
+}
+
+#home-contact .container-contact span {
+  font-weight: bold;
+}
+
+/* Product-info pagina's */
+#producten {
+  padding: 1.5rem;
+  height: 100%;
+  margin-bottom: 3rem;
+}
+
+#producten h1 {
+  padding-top: 1rem;
+}
+
+#producten h3 {
+  line-height: 1.5rem;
+}
+
+#producten p {
+  padding-bottom: 1rem;
+  line-height: 1.5rem;
+}
+
+/* Over ROBA page */
+#over-roba {
+  padding: 1.5rem;
+  height: 100%;
+  margin-bottom: 3rem;
+}
+
+#over-roba h1 {
+  padding-top: 1rem;
+}
+
+#over-roba h3 {
+  line-height: 1.5rem;
+}
+
+#over-roba p {
+  padding-bottom: 1rem;
+  line-height: 1.5rem;
+}
+
+.flex-container-contact {
+  display: flex;
+  justify-content: center;
+}
+
+#over-roba .container-contact {
+  font-size: 1.3rem;
+  text-align: center;
+  background: #d8d8d8;
+  border-radius: 10px;
+  padding: 2.5rem;
+  width: 50%;
+}
+
+#over-roba .container-contact h1 {
+  padding-bottom: 0.9rem;
+  padding-top: 0;
+}
+
+#over-roba .container-contact p {
+  padding-bottom: 0.4rem;
+}
+
+#over-roba .container-contact span {
+  font-weight: bold;
+}
+
+/* Footer Main Page */
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: var(--primary-color);
+  z-index: 2;
+}
+
+#footer .copyright {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+#footer .contact {
+  padding-bottom: 0.7rem;
+}
+
+/* Footer Product Page */
+#footer-product {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: var(--primary-color);
+  z-index: 2;
+}
+
+#footer-product .copyright {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+#footer-product .contact {
+  padding-bottom: 0.7rem;
+}
