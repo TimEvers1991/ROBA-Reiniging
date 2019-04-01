@@ -70,12 +70,17 @@
   #home-contact .container-contact {
     width: 65%;
     margin: 0 0 2rem 0;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   #over-roba-contact .container-contact {
     width: 65%;
     margin: 0 0 2rem 0;
-    font-size: 1rem;
+    font-size: 0.8rem;
+  }
+
+  /* Over Roba */
+  #over-roba {
+    margin-bottom: 0;
   }
 
   /* Footer */
@@ -83,6 +88,11 @@
     text-align: center;
   }
 
+  /* Footer Product Page */
+  #footer-product {
+    display: flex;
+    position: unset;
+  }
   #footer-product {
     text-align: center;
   }
