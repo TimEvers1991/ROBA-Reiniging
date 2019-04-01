@@ -1,31 +1,86 @@
-/* Tablet */
+/* Widescreen (max-width 1400px___________________________________________________________________________________________________________________ */
+@media (max-width: 1399px) and (min-width: 768px) {
+  #product-info .product-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.5rem;
+    padding: 0 1rem 1rem 1rem;
+    overflow: hidden;
+  }
+  .card {
+    background: #d8d8d8;
+    border-radius: 10px;
+    width: 700px;
+    height: 625px;
+    margin: auto;
+  }
 
-#product-info .product-container {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  padding: 0rem 2rem 2rem 2rem;
+  .card img {
+    display: inline-block;
+    width: 464px;
+    height: 420px;
+    margin: 1rem;
+    border-radius: 5px;
+  }
+
+  .product-button {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+  }
+
+  .product-button a {
+    margin-top: 0;
+  }
+
+  #footer-product {
+    display: flex;
+    position: unset;
+  }
 }
 
-#home-contact .container-contact {
-  margin-top: 0;
+/* Tablet (max-width 768px)____________________________________________________________________________________________________________________ */
+@media (max-width: 768px) {
+  .navbuttons li a:hover {
+    border-color: #001320;
+  }
+
+  #product-info .product-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0rem 2rem 2rem 2rem;
+  }
+
+  #home-contact .container-contact {
+    margin-top: 0;
+  }
+
+  #over-roba-contact .container-contact {
+    width: 75%;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  #footer-product {
+    display: flex;
+    position: unset;
+  }
+
+  #footer-product {
+    text-align: center;
+  }
 }
 
-#over-roba-contact .container-contact {
-  width: 75%;
-  margin-bottom: 1.5rem;
-  margin-top: 1rem;
-}
-
-.card img {
-  /* width: 464px; */
-  /* height: 315px; */
-}
-/* Mobile */
+/* Mobile____________________________________________________________________________________________________________________ */
 @media (max-width: 600px) {
   .navcontainer {
     display: flex;
     flex-direction: column;
     height: 130px;
+  }
+
+  .navbuttons li a:hover {
+    border-color: #001320;
   }
 
   .logo {
@@ -68,32 +123,19 @@
 
   /* Contact container */
   #home-contact .container-contact {
-    width: 65%;
+    width: 328px;
     margin: 0 0 2rem 0;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
   }
   #over-roba-contact .container-contact {
-    width: 65%;
-    margin: 0 0 2rem 0;
-    font-size: 0.8rem;
+    width: 328px;
+    /* margin: 0 0 2rem 0; */
+    margin: 0 0 0 0;
+    font-size: 1.2rem;
   }
 
   /* Over Roba */
   #over-roba {
     margin-bottom: 0;
-  }
-
-  /* Footer */
-  #footer {
-    text-align: center;
-  }
-
-  /* Footer Product Page */
-  #footer-product {
-    display: flex;
-    position: unset;
-  }
-  #footer-product {
-    text-align: center;
   }
 }

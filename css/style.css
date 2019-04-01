@@ -98,6 +98,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 0.5rem;
   padding: 0 1rem 1rem 1rem;
+  overflow: hidden;
 }
 
 /* Tijdelijk (geef image nog een class */
@@ -112,8 +113,8 @@ body {
 
 .card img {
   display: inline-block;
-  width: 616px;
-  height: 420px;
+  width: 554px;
+  height: 378px;
   margin: 1rem;
   border-radius: 7px;
 }
@@ -186,6 +187,7 @@ body {
 
 #producten h1 {
   padding-top: 1rem;
+  padding-bottom: 1.5rem;
 }
 
 #producten h3 {
