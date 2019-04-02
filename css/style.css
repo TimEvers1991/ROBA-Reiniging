@@ -1,7 +1,8 @@
 /* Variables */
 :root {
   --secondary-color: #98a8b4;
-  --primary-color: #094b77;
+  /* --primary-color: #094b77; */
+  --primary-color: #111111;
 }
 
 /* Main Style and utility classes */
@@ -148,7 +149,8 @@ body {
   display: inline-block;
   text-decoration: none;
   color: #fff;
-  background: #094b77;
+  /* background: #094b77; */
+  background: #111111;
   width: 180px;
   padding: 0.7rem 0.4rem 0.7rem 0.4rem;
   border-radius: 60px;
@@ -159,7 +161,8 @@ body {
 }
 
 .card ul a:hover {
-  background: #00395ccc;
+  /* background: #00395ccc; */
+  background: #111111b2;
 }
 
 /* Homepage contact */
@@ -211,6 +214,15 @@ body {
   padding-bottom: 1rem;
   line-height: 1.5rem;
 }
+
+#producten .container .no-padding-bottom {
+  padding-bottom: 0.2rem;
+}
+
+<section id="producten">
+     <div class="container">
+      <h1 class="text-center">ROBA Azur</h1>
+      <p class="text-center">Geurneutralisator</p>
 
 /* Over ROBA page */
 #over-roba {
