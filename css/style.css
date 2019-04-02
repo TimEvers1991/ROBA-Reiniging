@@ -1,7 +1,7 @@
 /* Variables */
 :root {
-  --secondary-color: #4a708b;
-  --primary-color: #001320;
+  --secondary-color: #98a8b4;
+  --primary-color: #094b77;
 }
 
 /* Main Style and utility classes */
@@ -37,6 +37,13 @@ body {
 }
 .py-3 {
   padding: 3rem 0;
+}
+
+.margin-right {
+  margin-right: 1rem;
+}
+.margin-left {
+  margin-left: 1rem;
 }
 
 .margin-top {
@@ -89,10 +96,7 @@ body {
   border-color: #ffbc00;
 }
 
-/* Home-page (categorieën en producten) */
-#product-info {
-}
-
+/* Producten (categorieën en producten) */
 #product-info .product-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -101,7 +105,6 @@ body {
   overflow: hidden;
 }
 
-/* Tijdelijk (geef image nog een class */
 .card {
   background: #d8d8d8;
   border-radius: 10px;
@@ -131,6 +134,12 @@ body {
   padding-bottom: 1rem;
 }
 
+.product-button-3 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
 .card ul {
   list-style: none;
 }
@@ -139,10 +148,14 @@ body {
   display: inline-block;
   text-decoration: none;
   color: #fff;
-  background: #001c2ecc;
+  background: #094b77;
   width: 180px;
   padding: 0.7rem 0.4rem 0.7rem 0.4rem;
   border-radius: 60px;
+}
+
+.product-button li .special-button {
+  width: 200px;
 }
 
 .card ul a:hover {
@@ -248,9 +261,11 @@ body {
 
 /* Footer Main Page */
 #footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  text-align: center;
   color: #fff;
   background: var(--primary-color);
   z-index: 2;
@@ -266,6 +281,7 @@ body {
 }
 
 /* Footer Product Page */
+
 #footer-product {
   display: flex;
   position: fixed;
@@ -285,4 +301,26 @@ body {
 
 #footer-product .contact {
   padding-bottom: 0.7rem;
+}
+
+#footer-productpage {
+    display: flex;
+    position: unset;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: var(--primary-color);
+    z-index: 2;
+  }
+
+  #footer-productpage .copyright-productpage {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  #footer-productpage .contact-productpage {
+    padding-bottom: 0.7rem;
+  }
 }
