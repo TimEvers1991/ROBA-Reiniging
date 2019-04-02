@@ -196,7 +196,7 @@ body {
 
 /* Product-info pagina's */
 #producten {
-  padding: 1.5rem;
+  padding: 2rem;
   height: 100%;
   margin-bottom: 3rem;
 }
@@ -219,12 +219,15 @@ body {
   padding-bottom: 0.2rem;
 }
 
-<section id="producten">
-     <div class="container">
-      <h1 class="text-center">ROBA Azur</h1>
-      <p class="text-center">Geurneutralisator</p>
-
 /* Over ROBA page */
+
+<section id="over-roba">
+  <div class="container p-1">
+
+  #over-roba .container {
+    padding: 2rem;
+  }
+
 #over-roba {
   padding: 1.5rem;
   height: 100%;
