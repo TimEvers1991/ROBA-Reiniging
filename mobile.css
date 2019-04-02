@@ -1,31 +1,94 @@
-/* Tablet */
+/* Widescreen (max-width 1400px___________________________________________________________________________________________________________________ */
+@media (max-width: 1399px) and (min-width: 768px) {
+  #product-info .product-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.5rem;
+    padding: 0 1rem 1rem 1rem;
+    overflow: hidden;
+  }
+  .card {
+    background: #d8d8d8;
+    border-radius: 10px;
+    width: 700px;
+    height: 615px;
+    margin: auto;
+  }
 
-#product-info .product-container {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  padding: 0rem 2rem 2rem 2rem;
+  .card img {
+    display: inline-block;
+    width: 464px;
+    height: 420px;
+    margin: 1rem;
+    border-radius: 5px;
+  }
+
+  .product-button {
+    display: flex;
+    justify-content: space-around;
+    /* margin-top: 2rem; */
+  }
+
+  .product-button a {
+    margin-top: 0;
+  }
+  #footer {
+    display: flex;
+    position: unset;
+    bottom: 0;
+    width: 100%;
+  }
 }
 
-#home-contact .container-contact {
-  margin-top: 0;
+/* Tablet (max-width 768px)____________________________________________________________________________________________________________________ */
+@media (max-width: 768px) {
+  .navbuttons li a:hover {
+    border-color: #001320;
+  }
+
+  #product-info .product-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0rem 2rem 2rem 2rem;
+  }
+
+  #home-contact .container-contact {
+    margin-top: 0;
+  }
+
+  #over-roba-contact .container-contact {
+    width: 75%;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  #footer {
+    display: flex;
+    position: unset;
+    bottom: 0;
+    width: 100%;
+  }
+
+  #footer-product {
+    text-align: center;
+  }
+
+  #footer-product {
+    display: flex;
+    position: unset;
+  }
 }
 
-#over-roba-contact .container-contact {
-  width: 75%;
-  margin-bottom: 1.5rem;
-  margin-top: 1rem;
-}
-
-.card img {
-  /* width: 464px; */
-  /* height: 315px; */
-}
-/* Mobile */
+/* Mobile____________________________________________________________________________________________________________________ */
 @media (max-width: 600px) {
   .navcontainer {
     display: flex;
     flex-direction: column;
     height: 130px;
+  }
+
+  .navbuttons li a:hover {
+    border-color: #001320;
   }
 
   .logo {
@@ -66,24 +129,103 @@
     margin-top: 0;
   }
 
-  /* Contact container */
-  #home-contact .container-contact {
-    width: 65%;
-    margin: 0 0 2rem 0;
-    font-size: 1rem;
+  .margin-right {
+    margin-right: 1rem;
   }
-  #over-roba-contact .container-contact {
-    width: 65%;
-    margin: 0 0 2rem 0;
-    font-size: 1rem;
+  .margin-left {
+    margin-left: 1rem;
   }
 
-  /* Footer */
-  #footer {
-    text-align: center;
+  /* Contact container */
+  #home-contact .container-contact {
+    width: 328px;
+    margin: 0 0 2rem 0;
+    font-size: 1.2rem;
+  }
+  #over-roba-contact .container-contact {
+    width: 328px;
+    /* margin: 0 0 2rem 0; */
+    margin: 0 0 0 0;
+    font-size: 1.2rem;
+  }
+
+  /* Over Roba */
+  #over-roba {
+    margin-bottom: 0;
   }
 
   #footer-product {
-    text-align: center;
+    display: flex;
+    position: unset;
   }
+
+  #footer {
+    display: flex;
+    position: unset;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .card img {
+    width: 308px;
+    height: 210px;
+    margin: 0;
+  }
+
+  .product-button-3 .margin-right {
+    margin-right: 0.2rem;
+  }
+  .product-button-3 .margin-left {
+    margin-left: 0.2rem;
+  }
+}
+
+/* Portrait and Landscape */
+@media only screen and (width: 1024px) and (height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+  #footer {
+    display: block;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background: var(--primary-color);
+    z-index: 2;
+  }
+}
+
+@media only screen and (width: 1366px) and (height: 1024px) and (-webkit-min-device-pixel-ratio: 1.5) {
+  #footer {
+    display: block;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background: var(--primary-color);
+    z-index: 2;
+  }
+}
+
+@media only screen and (width: 768px) and (height: 1024px) and (-webkit-min-device-pixel-ratio: 1.5) {
+  #footer-product {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: var(--primary-color);
+    z-index: 2;
+  }
+}
+
+@media only screen and (width: 1280px) and (min-height: 500px) and (max-height: 650px) {}
+#footer-product {
+  display: flex;
+  position: unset;
+}
 }
