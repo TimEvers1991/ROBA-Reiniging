@@ -220,15 +220,12 @@ body {
 }
 
 /* Over ROBA page */
-
-#over-roba .container {
-  padding: 2rem;
+#over-roba {
+  padding: 1rem;
 }
 
-#over-roba {
-  padding: 1.5rem;
-  height: 100%;
-  margin-bottom: 3rem;
+#over-roba .container {
+  padding: 0rem;
 }
 
 #over-roba h1 {

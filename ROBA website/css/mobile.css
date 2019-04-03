@@ -140,6 +140,20 @@
     margin: 0;
   }
 
+  /* TOEVOEGEN MARGIN TOP BIJ KNOPPEN */
+  .card {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  #product-info .product-container {
+    padding: 0 0.4rem 1rem 0.4rem;
+  }
+
+  .card ul a {
+    margin-top: 10px;
+  }
+
   .product-button-3 .margin-right {
     margin-right: 0.2rem;
   }
