@@ -220,18 +220,12 @@ body {
 }
 
 /* Over ROBA page */
-
-<section id="over-roba">
-  <div class="container p-1">
-
-  #over-roba .container {
-    padding: 2rem;
-  }
-
 #over-roba {
-  padding: 1.5rem;
-  height: 100%;
-  margin-bottom: 3rem;
+  padding: 1rem;
+}
+
+#over-roba .container {
+  padding: 0rem;
 }
 
 #over-roba h1 {
@@ -274,16 +268,22 @@ body {
   font-weight: bold;
 }
 
-/* Footer Main Page */
+/* Footer experiment */
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+#content-wrap {
+  padding-bottom: 4.5rem; /* Footer height */
+}
 #footer {
-  display: block;
-  bottom: 0;
-  position: fixed;
+  position: absolute;
+  bottom: 0px;
   width: 100%;
+  height: 4.5rem; /* Footer height */
   text-align: center;
   color: #fff;
   background: var(--primary-color);
-  z-index: 2;
 }
 
 #footer .copyright {
@@ -291,51 +291,6 @@ body {
   padding-bottom: 0.5rem;
 }
 
-#footer .contact {
+#footer.contact {
   padding-bottom: 0.7rem;
-}
-
-/* Footer Product Page */
-
-#footer-product {
-  display: flex;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  background: var(--primary-color);
-  z-index: 2;
-}
-
-#footer-product .copyright {
-  padding-top: 1rem;
-  padding-bottom: 0.5rem;
-}
-
-#footer-product .contact {
-  padding-bottom: 0.7rem;
-}
-
-#footer-productpage {
-    display: flex;
-    position: unset;
-    bottom: 0;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    background: var(--primary-color);
-    z-index: 2;
-  }
-
-  #footer-productpage .copyright-productpage {
-    padding-top: 1rem;
-    padding-bottom: 0.5rem;
-  }
-
-  #footer-productpage .contact-productpage {
-    padding-bottom: 0.7rem;
-  }
 }
