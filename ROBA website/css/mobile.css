@@ -1,0 +1,149 @@
+/* Widescreen (max-width 1400px___________________________________________________________________________________________________________________ */
+@media (max-width: 1399px) and (min-width: 768px) {
+  #product-info .product-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.5rem;
+    padding: 0 1rem 1rem 1rem;
+    overflow: hidden;
+  }
+  .card {
+    background: #d8d8d8;
+    border-radius: 10px;
+    width: 700px;
+    height: 615px;
+    margin: auto;
+  }
+
+  .card img {
+    display: inline-block;
+    width: 464px;
+    height: 420px;
+    margin: 1rem;
+    border-radius: 5px;
+  }
+
+  .product-button {
+    display: flex;
+    justify-content: space-around;
+    /* margin-top: 2rem; */
+  }
+
+  .product-button a {
+    margin-top: 0;
+  }
+}
+
+/* Tablet (max-width 768px)____________________________________________________________________________________________________________________ */
+@media (max-width: 768px) {
+  .navbuttons li a:hover {
+    border-color: #001320;
+  }
+
+  #product-info .product-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0rem 2rem 2rem 2rem;
+  }
+
+  #home-contact .container-contact {
+    margin-top: 0;
+  }
+
+  #over-roba-contact .container-contact {
+    width: 75%;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+  }
+}
+
+/* Mobile____________________________________________________________________________________________________________________ */
+@media (max-width: 600px) {
+  .navcontainer {
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+  }
+
+  .navbuttons li a:hover {
+    border-color: #001320;
+  }
+
+  .logo {
+    width: 240px;
+    height: 64px;
+  }
+
+  .navbuttons {
+    padding: 1.7rem;
+    padding-top: 1rem;
+  }
+
+  /* Home-page (categoriën en producten */
+  #product-info .product-container {
+    margin: 0rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  #product-info h3 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .card {
+    padding: 0;
+  }
+
+  .card img {
+    width: 308px;
+    height: 210px;
+    margin: 0.5rem;
+  }
+
+  .card ul a {
+    width: 155px;
+    padding: 0.35rem 0.2rem 0.35rem 0.2rem;
+    border-radius: 60px;
+    margin-top: 0;
+  }
+
+  .margin-right {
+    margin-right: 1rem;
+  }
+  .margin-left {
+    margin-left: 1rem;
+  }
+
+  /* Contact container */
+  #home-contact .container-contact {
+    width: 328px;
+    margin: 0 0 2rem 0;
+    font-size: 1.2rem;
+  }
+  #over-roba-contact .container-contact {
+    width: 328px;
+    /* margin: 0 0 2rem 0; */
+    margin: 0 0 0 0;
+    font-size: 1.2rem;
+  }
+
+  /* Over Roba */
+  #over-roba {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .card img {
+    width: 308px;
+    height: 210px;
+    margin: 0;
+  }
+
+  .product-button-3 .margin-right {
+    margin-right: 0.2rem;
+  }
+  .product-button-3 .margin-left {
+    margin-left: 0.2rem;
+  }
+}
