@@ -241,6 +241,10 @@ body {
   line-height: 1.5rem;
 }
 
+#over-roba .margin-bottom {
+  margin-bottom: 3rem;
+}
+
 .flex-container-contact {
   display: flex;
   justify-content: center;

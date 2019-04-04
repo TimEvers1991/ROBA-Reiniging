@@ -32,6 +32,10 @@
   .product-button a {
     margin-top: 0;
   }
+
+  #over-roba .margin-bottom {
+    margin-bottom: 2rem;
+  }
 }
 
 /* Tablet (max-width 768px)____________________________________________________________________________________________________________________ */
@@ -54,6 +58,10 @@
     width: 75%;
     margin-bottom: 1.5rem;
     margin-top: 1rem;
+  }
+
+  #over-roba .margin-bottom {
+    margin-bottom: 1rem;
   }
 }
 
@@ -114,6 +122,10 @@
     margin-left: 1rem;
   }
 
+  #over-roba .margin-bottom {
+    margin-bottom: 0rem;
+  }
+
   /* Contact container */
   #home-contact .container-contact {
     width: 328px;
@@ -159,5 +171,9 @@
   }
   .product-button-3 .margin-left {
     margin-left: 0.2rem;
+  }
+
+  #over-roba .margin-bottom {
+    margin-bottom: 0rem;
   }
 }
