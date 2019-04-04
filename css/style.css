@@ -30,6 +30,10 @@ body {
   text-decoration: underline;
 }
 
+.padding-top {
+  padding-top: 1rem;
+}
+
 .py-1 {
   padding: 1rem 0;
 }
@@ -51,6 +55,10 @@ body {
   margin-top: 1.4rem;
 }
 
+.margin-top-1 {
+  margin-top: 1rem;
+}
+
 /* Navbar */
 #navbar {
   background: var(--primary-color);
@@ -64,18 +72,26 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 85px;
+  height: 60px;
 }
 
+/* .logo-wrap {
+  display: flex;
+  justify-content: center;
+} */
+
 .logo {
-  display: inline-block;
-  width: 320px;
-  height: 85px;
+  display: block;
+  margin: auto;
+  width: 50%;
+  /* height: 119px; */
+  /* margin-bottom: 2rem; */
 }
 
 .navbuttons {
   display: flex;
-  padding: 1.7rem;
+  padding: 0rem 1.7rem 0.5rem 1.7rem;
+  margin-top: 0rem;
 }
 
 .navbuttons li {

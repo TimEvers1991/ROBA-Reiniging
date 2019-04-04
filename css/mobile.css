@@ -70,16 +70,19 @@
   .navcontainer {
     display: flex;
     flex-direction: column;
-    height: 130px;
+    height: 60px;
+  }
+
+  .logo {
+    display: block;
+    margin: auto;
+    width: 80%;
+    /* height: 119px; */
+    /* margin-bottom: 2rem; */
   }
 
   .navbuttons li a:hover {
     border-color: #001320;
-  }
-
-  .logo {
-    width: 240px;
-    height: 64px;
   }
 
   .navbuttons {
@@ -150,6 +153,14 @@
     width: 308px;
     height: 210px;
     margin: 0;
+  }
+
+  .logo {
+    display: block;
+    margin: auto;
+    width: 80%;
+    /* height: 119px; */
+    /* margin-bottom: 2rem; */
   }
 
   /* TOEVOEGEN MARGIN TOP BIJ KNOPPEN */
